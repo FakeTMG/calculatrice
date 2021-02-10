@@ -104,27 +104,27 @@ def GetTheNumbers():
         number2 = findElements(list_of_floats, lst3)
         print(number2)
         zipped_lists = zip(number1, number2)
-        if 1 in p1:
+        if 1 in p1 or '%' in my_str:
             sum = [x % y for (x, y) in zipped_lists]
             messagebox.showinfo(title="Results",message=sum)
             p1.clear()
-        elif 2 in p1:
+        elif 2 in p1 or '**' in my_str:
             sum = [x ** y for (x, y) in zipped_lists]
             messagebox.showinfo(title="Results",message=sum)
             p1.clear()
-        elif 8 in p1:
+        elif 8 in p1 or '*' in my_str:
             sum = [x * y for (x, y) in zipped_lists]
             messagebox.showinfo(title="Results", message=sum)
             p1.clear()
-        elif 12 in p1:
+        elif 12 in p1 or '-' in my_str:
             sum = [x - y for (x, y) in zipped_lists]
             messagebox.showinfo(title="Results", message=sum)
             p1.clear()
-        elif 16 in p1:
+        elif 16 in p1 or '+' in my_str:
             sum = [x + y for (x, y) in zipped_lists]
             messagebox.showinfo(title="Results", message=sum)
             p1.clear()
-        elif 17 in p1:
+        elif 17 in p1 or '/' in my_str:
             sum = [x / y for (x, y) in zipped_lists]
             messagebox.showinfo(title="Results", message=sum)
             p1.clear()
